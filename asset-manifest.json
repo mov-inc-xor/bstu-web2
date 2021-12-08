@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/bstu-web2/static/css/main.2e86b9b8.chunk.css",
-    "main.js": "/bstu-web2/static/js/main.83264a8e.chunk.js",
-    "main.js.map": "/bstu-web2/static/js/main.83264a8e.chunk.js.map",
+    "main.css": "/bstu-web2/static/css/main.89d149a7.chunk.css",
+    "main.js": "/bstu-web2/static/js/main.aa2ac0c9.chunk.js",
+    "main.js.map": "/bstu-web2/static/js/main.aa2ac0c9.chunk.js.map",
     "runtime-main.js": "/bstu-web2/static/js/runtime-main.e202bf43.js",
     "runtime-main.js.map": "/bstu-web2/static/js/runtime-main.e202bf43.js.map",
     "static/js/2.913cfd9b.chunk.js": "/bstu-web2/static/js/2.913cfd9b.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.4136df72.chunk.js": "/bstu-web2/static/js/3.4136df72.chunk.js",
     "static/js/3.4136df72.chunk.js.map": "/bstu-web2/static/js/3.4136df72.chunk.js.map",
     "index.html": "/bstu-web2/index.html",
-    "static/css/main.2e86b9b8.chunk.css.map": "/bstu-web2/static/css/main.2e86b9b8.chunk.css.map",
+    "static/css/main.89d149a7.chunk.css.map": "/bstu-web2/static/css/main.89d149a7.chunk.css.map",
     "static/js/2.913cfd9b.chunk.js.LICENSE.txt": "/bstu-web2/static/js/2.913cfd9b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.e202bf43.js",
     "static/js/2.913cfd9b.chunk.js",
-    "static/css/main.2e86b9b8.chunk.css",
-    "static/js/main.83264a8e.chunk.js"
+    "static/css/main.89d149a7.chunk.css",
+    "static/js/main.aa2ac0c9.chunk.js"
   ]
 }
