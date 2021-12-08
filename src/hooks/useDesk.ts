@@ -1,3 +1,4 @@
+import axios from 'axios'
 import { useEffect, useState } from 'react'
 import { v4 as uuidv4 } from 'uuid'
 
@@ -41,15 +42,7 @@ class List extends Array<Task> {
   }
 
   public static randomHeaderColor() {
-    const colors = [
-      '#caedd2',
-      'rgb(237 207 202)',
-      'rgb(255, 236, 170)',
-      'rgb(202 231 237)',
-      'rgb(204 202 237)',
-      'rgb(237 202 234)',
-      'rgb(237 202 202)',
-    ]
+    const colors = ['#caedd2', 'rgb(237 207 202)', 'rgb(255, 236, 170)', 'rgb(202 231 237)', 'rgb(204 202 237)', 'rgb(237 202 234)', 'rgb(237 202 202)']
     const index = Math.floor(Math.random() * colors.length)
     return colors[index]
   }
@@ -86,13 +79,22 @@ const useDesk = (): UseDeskReturnType => {
   const [desk, setDesk] = useState<Desk>([])
 
   useEffect(() => {
-    setDesk([
-      new List(
-        'Нераспределённые',
-        List.defaultHeaderColor,
-        ...[new Task('Сделать канбан доску быстро бесплатно и без смс'), new Task('Сделать лабораторки по WEB'), new Task('Тут фантазия кончилась, к сожалению')]
-      ),
-    ])
+    ;(async () => {
+      const data = await axios.get('localhost:8080/desk').then((res) => res.data)
+      setDesk(data.desk.lists.map((list: any) => new List(list.title, list.color, ...list.tasks.map((task: any) => new Task(task.text)))))
+    })().catch(() => {
+      setDesk([
+        new List(
+          'Нераспределённые',
+          List.defaultHeaderColor,
+          ...[
+            new Task('Сделать канбан доску быстро бесплатно и без смс'),
+            new Task('Сделать лабораторки по WEB'),
+            new Task('Тут фантазия кончилась, к сожалению'),
+          ]
+        ),
+      ])
+    })
   }, [])
 
   const addList = () => {
