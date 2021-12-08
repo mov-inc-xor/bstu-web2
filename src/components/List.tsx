@@ -8,10 +8,10 @@ import { Draggable, Droppable } from 'react-beautiful-dnd'
 type ListType = {
   desk: UseDeskReturnType
   list: ListModel
-  removeable?: boolean
+  editable?: boolean
 }
 
-const List = ({ desk, list, removeable = true }: ListType) => {
+const List = ({ desk, list, editable = true }: ListType) => {
   const titleRef = useRef<HTMLSpanElement>(null)
 
   const renameModeOn = () => {
@@ -33,13 +33,16 @@ const List = ({ desk, list, removeable = true }: ListType) => {
           {list.title}
         </span>
         <div className="header__btn-container">
-          <button onClick={() => renameModeOn()} className="btn btn_inline-gray">
-            <FontAwesomeIcon icon={faPen} />
-          </button>
-          {removeable && (
-            <button onClick={() => desk.removeList(list.id)} className="btn btn_inline-red">
-              <FontAwesomeIcon icon={faTrash} />
-            </button>
+          {editable && (
+            <>
+              <button onClick={() => renameModeOn()} className="btn btn_inline-gray">
+                <FontAwesomeIcon icon={faPen} />
+              </button>
+
+              <button onClick={() => desk.removeList(list.id)} className="btn btn_inline-red">
+                <FontAwesomeIcon icon={faTrash} />
+              </button>
+            </>
           )}
         </div>
       </header>

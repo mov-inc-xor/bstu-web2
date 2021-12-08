@@ -54,7 +54,7 @@ const IndexPage = () => {
       <main className="main">
         <div className="desk">
           <DragDropContext onDragEnd={onDragEnd}>
-            {desk.desk[0] && <List key={desk.desk[0].id} desk={desk} list={desk.desk[0]} removeable={false} />}
+            {desk.desk[0] && <List key={desk.desk[0].id} desk={desk} list={desk.desk[0]} editable={false} />}
 
             {desk.desk.slice(1).map((list) => (
               <List key={list.id} desk={desk} list={list} />
