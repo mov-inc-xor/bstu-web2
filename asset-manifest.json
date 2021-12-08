@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/bstu-web2/static/css/main.89d149a7.chunk.css",
-    "main.js": "/bstu-web2/static/js/main.aa2ac0c9.chunk.js",
-    "main.js.map": "/bstu-web2/static/js/main.aa2ac0c9.chunk.js.map",
+    "main.js": "/bstu-web2/static/js/main.d80bcab0.chunk.js",
+    "main.js.map": "/bstu-web2/static/js/main.d80bcab0.chunk.js.map",
     "runtime-main.js": "/bstu-web2/static/js/runtime-main.e202bf43.js",
     "runtime-main.js.map": "/bstu-web2/static/js/runtime-main.e202bf43.js.map",
     "static/js/2.913cfd9b.chunk.js": "/bstu-web2/static/js/2.913cfd9b.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.e202bf43.js",
     "static/js/2.913cfd9b.chunk.js",
     "static/css/main.89d149a7.chunk.css",
-    "static/js/main.aa2ac0c9.chunk.js"
+    "static/js/main.d80bcab0.chunk.js"
   ]
 }
