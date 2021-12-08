@@ -9,7 +9,7 @@ import { RegisterPage } from './pages/RegisterPage'
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/bstu-web2">
       <Routes>
         <Route path="/" element={<IndexPage />} />
         <Route path="/signin" element={<SignIn />} />
