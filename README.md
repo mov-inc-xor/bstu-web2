@@ -5,4 +5,4 @@
 * styled-components
 * react-beautiful-dnd
 
-Деплой: 
+Деплой проекта на [gh-pages](https://mov-inc-xor.github.io/bstu-web2/)
