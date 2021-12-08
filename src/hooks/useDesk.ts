@@ -15,7 +15,7 @@ class Task {
     if (title[title.length - 1].length < 3) {
       title = title.slice(0, 2)
     }
-    return title.join(' ').replaceAll(/[^А-ЯЁа-яё0-9\s]/g, '')
+    return title.join(' ').replaceAll(/[^А-ЯЁа-яёA-Za-z0-9\s]/g, '')
   }
 
   public get id() {

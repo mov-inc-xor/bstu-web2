@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
   margin: 0;
@@ -33,7 +34,8 @@ html, body {
     display: flex;
     align-items: center;
 
-    a, a:active {
+    a,
+    a:active {
       color: rgb(88, 117, 255);
     }
 
@@ -74,10 +76,12 @@ html, body {
   &__header {
     display: flex;
     justify-content: space-between;
-    
+
     span {
-      line-break: anywhere;
       outline: none;
+      white-space: pre;
+      overflow: hidden;
+      max-width: -webkit-fill-available;
     }
   }
 
@@ -198,7 +202,7 @@ html, body {
   }
 
   &_inline-green {
-    color: rgb(134, 209, 138);;
+    color: rgb(134, 209, 138);
   }
 
   &_colored {
